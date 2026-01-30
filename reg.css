@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+h1{
+    background-color: blue;
+    text-align: center;
+    width: 400px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid blueviolet;
+    box-shadow: 6px 4px 12px rgb(103, 103, 212);
+}
+
+form{
+    width: 400px;
+    margin: 30px auto;
+}
+
+fieldset{
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid blueviolet;
+}
+
+legend{
+    background-color: blue;
+    border-radius: 5px;
+    padding: 8px;
+    border: 2px solid grey;
+    font-size: 22px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    padding: 10px;
+
+}
+
+label{
+    color: yellow;
+}
+
+input
+{
+    padding:8px;
+    
+}
+
+input[type="text"]
+input[type="password"]
+input[type="tel"]
+input[type="email"]
+input[type="number"]
+input[type="date"]{
+    width: 100%;
+}

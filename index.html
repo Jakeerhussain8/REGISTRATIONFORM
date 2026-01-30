@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
     <link rel="icon" href="./Blue and Black Minimalist Brand Logo.png">
+    <link rel="stylesheet" href="/reg.css">
 </head>
 <body>
     <h1>REGISTRATION FORM</h1>
     <form>
+        <fieldset>
+            <legend> PERSONAL DETAILS</legend>
         <table>
             <tr>
                 <td><label for="fname">FIRST NAME</label></td>
@@ -70,7 +73,33 @@
         </table>        
         <button type="submit">SUBMIT</button>
         <button type="reset">RESET</button>
-
+         </fieldset>
     </form>
+
+    <fieldset>
+        <legend>COURSE DETAILS</legend>
+        <table>
+            <tr>
+                <td><label for="course">SELECT COURSE</label></td>
+                <td><select name="course" id="course">
+                    <option value="SELECT">SELECT</option>
+                    <option value="JAVA">JAVA</option>
+                    <option value="PYTHON">PYTHON</option>
+                    <option value="C">C</option>
+                    <option value="C++">C++</option>
+                    </select> <br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="del">DELIVERY MODE</label></td>
+                <td><input type="checkbox">ONLINE</td>
+                <td><input type="checkbox">OFFLINE</td>
+            </tr>
+            <tr>
+                <td><label for="com">COMMENTS</label></td>
+                <td><input type="text"></td>
+            </tr>
+        </table>
+    </fieldset>
 </body>
 </html>
