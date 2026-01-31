@@ -15,31 +15,42 @@
         <table>
             <tr>
                 <td><label for="fname">FIRST NAME</label></td>
-                <td><input type="text" name="fname" id="fname"> <br /></td>
+                <td>
+                    <input type="text" name="fname" id="fname" placeholder="EX: JAKEER"> 
+                    <p class="tooltip">Enter Your First Name</p>
+                </td>
             </tr>
             <tr>
                 <td><label for="lname">LAST NAME</label></td>
-                <td><input type="text" name="lname" id="lname"> <br /></td>
+                <td>
+                    <input type="text" name="lname" id="lname" placeholder="EX: HUSSAIN"> 
+                    <p class="tooltip">Enter Your Last Name</p>
+                </td>
             </tr>
             <tr>
                 <td><label for="sname">SURNAME</label></td>
-                <td><input type="text" name="sname" id="sname"> <br></td>
+                <td><input type="text" name="sname" id="sname" placeholder="EX: MULLA"> <br></td>
             </tr>
             <tr>
                 <td><label for="number">PHONE NUMBER</label></td>
-                <td><input type="tel" name="number" id="number"> <br></td>
+                <td><input type="tel" name="number" id="number" placeholder="EX: 630*****29"> <br></td>
             </tr>
             <tr>
                 <td><label for="email">EMAIL</label></td>
-                <td><input type="email" name="fname" id="fname" required> <br></td>
+                <td>
+                    <input type="email" name="fname" id="fname" required placeholder="EX: jakeer@gmail.com"> 
+                    <p class="tooltip">Enter Your Email</p>
+                    <img class="valid" src="https://cdn-icons-png.flaticon.com/128/14090/14090371.png" alt="val">
+                    <img class="invalid" src="https://cdn-icons-png.flaticon.com/128/1828/1828843.png" alt="inval">
+                </td>
             </tr>
             <tr>
                 <td><label for="pass">PASSWORD</label></td>
-                <td><input type="password" name="pass" id="pass" required> <br></td>
+                <td><input type="password" name="pass" id="pass" required placeholder="EX: jak@123"> <br></td>
             </tr>
             <tr>
                 <td><label for="cpassword">CONFIRM PASSWORD</label></td>
-                <td><input type="password" name="cpassword" id="cpassword" required> <br></td>
+                <td><input type="password" name="cpassword" id="cpassword" required placeholder="EX: ********"> <br></td>
             </tr>
             <tr>
                 <td><label for="dob">DATE OF BIRTH</label> </td>
@@ -47,7 +58,7 @@
             </tr>
             <tr>
                 <td><label for="age">AGE</label></td>
-                <td><input type="number" name="age" id="age"> <br /></td>
+                <td><input type="number" name="age" id="age" placeholder="EX: 22"> <br /></td>
             </tr>
             <tr>
                 <td><label for="g">GENDER</label></td>
@@ -74,7 +85,7 @@
         <button type="submit">SUBMIT</button>
         <button type="reset">RESET</button>
          </fieldset>
-    </form>
+   
 
     <fieldset>
         <legend>COURSE DETAILS</legend>
@@ -97,9 +108,10 @@
             </tr>
             <tr>
                 <td><label for="com">COMMENTS</label></td>
-                <td><input type="text"></td>
+                <td><input type="text" placeholder="EX: say something"></td>
             </tr>
         </table>
     </fieldset>
+ </form>
 </body>
 </html>

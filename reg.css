@@ -13,9 +13,9 @@ body{
 }
 
 h1{
-    background-color: blue;
+    background-color: rgb(28, 28, 213);
     text-align: center;
-    width: 400px;
+    width: 520px;
     margin: 10px auto;
     padding: 10px;
     border-radius: 10px;
@@ -24,14 +24,16 @@ h1{
 }
 
 form{
-    width: 400px;
+    width: 550px;
     margin: 30px auto;
 }
 
 fieldset{
     border-radius: 10px;
     padding: 10px;
+    margin: 20px;
     border: 2px solid blueviolet;
+    background: linear-gradient(rgb(170, 49, 170),rgb(39, 39, 149));
 }
 
 legend{
@@ -54,19 +56,65 @@ td{
 
 label{
     color: yellow;
+    font-size: 15px;
 }
 
 input
 {
     padding:8px;
+    border-radius: 10px;
+    border: 2px solid blue;
     
 }
 
-input[type="text"]
-input[type="password"]
-input[type="tel"]
-input[type="email"]
-input[type="number"]
-input[type="date"]{
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="select"]{
     width: 100%;
+}
+
+input:focus{
+    background: rgb(25, 246, 246);
+}
+
+.tooltip{
+    background-color: rgb(26, 26, 247);
+    border-radius: 5px;
+    padding: 4px;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+}
+
+input:focus+p{
+    display: block;
+}
+
+input[type="radio"]:checked{
+    height: 20px;
+    width: 20px;
+}
+
+input[type="radio"]:checked+label{
+    color: blue;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+.valid,.invalid{
+    height: 20px;
+    margin-top: 8px;
+    display: none;
+}
+
+input[type="email"]:focus:valid + p + .valid{
+    display: inline;
+}
+
+input[type="email"]:focus:invalid + p + .valid + .invalid{
+    display: inline;
 }
